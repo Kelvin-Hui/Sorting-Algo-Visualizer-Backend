@@ -6,6 +6,10 @@ import json
 app = Flask(__name__)
 CORS(app)
 
+@app.route("/")
+def home():
+    return '<h1>Home</h1>'
+
 
 @app.route('/sort' , methods = ["GET"])
 def sort():
