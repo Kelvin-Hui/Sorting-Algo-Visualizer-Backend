@@ -1,7 +1,7 @@
 import random
 
 def randomArray(n : int) -> list:
-    return random.sample(range(0,600),n)
+    return random.sample(range(1,600),n)
 
 def animatedArray(algo : str , arr : list) -> list:
     algo_options = {

@@ -10,7 +10,6 @@ CORS(app)
 def home():
     return '<h1>Home</h1>'
 
-
 @app.route('/sort' , methods = ["GET"])
 def sort():
     if "parms" in request.args:
@@ -23,8 +22,6 @@ def sort():
             return jsonify(isSorted = True) , 200
         else:
             return jsonify(isSorted = False , data = animatedArray(algo,array))
-
-
 
 @app.route('/generate' , methods = ["GET"])
 def generate():
